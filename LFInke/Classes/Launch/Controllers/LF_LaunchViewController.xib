@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LF_LaunchViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_zbfx" translatesAutoresizingMaskIntoConstraints="NO" id="tBv-gD-ds5">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8hX-3b-W2e">
+                    <rect key="frame" x="311" y="0.0" width="64" height="64"/>
+                    <state key="normal" image="launch_close"/>
+                    <connections>
+                        <action selector="closeBtnClick:" destination="-1" eventType="touchUpInside" id="nMy-Ql-kSi"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1G1-NE-k8Q">
+                    <rect key="frame" x="30" y="30" width="72" height="26"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="兰州市" image="launch_map_on">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RlV-2q-b4f">
+                    <rect key="frame" x="62.5" y="311.5" width="250" height="44"/>
+                    <state key="normal" title="开启直播" backgroundImage="room_button"/>
+                    <connections>
+                        <action selector="startLiveBtnClick:" destination="-1" eventType="touchUpInside" id="nBg-r7-HMh"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="起个名字吧" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ayo-LX-27f">
+                    <rect key="frame" x="62.5" y="252.5" width="250" height="44"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="RlV-2q-b4f" firstAttribute="leading" secondItem="ayo-LX-27f" secondAttribute="leading" id="6tF-LX-8if"/>
+                <constraint firstAttribute="trailing" secondItem="tBv-gD-ds5" secondAttribute="trailing" id="7vt-qu-Qta"/>
+                <constraint firstItem="RlV-2q-b4f" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="9pC-dw-fIm"/>
+                <constraint firstItem="RlV-2q-b4f" firstAttribute="top" secondItem="ayo-LX-27f" secondAttribute="bottom" constant="15" id="Efk-WH-RjK"/>
+                <constraint firstItem="tBv-gD-ds5" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Qn7-p0-yxI"/>
+                <constraint firstItem="RlV-2q-b4f" firstAttribute="height" secondItem="ayo-LX-27f" secondAttribute="height" id="V6m-lF-T5N"/>
+                <constraint firstAttribute="trailing" secondItem="8hX-3b-W2e" secondAttribute="trailing" id="at6-Ia-L2H"/>
+                <constraint firstItem="1G1-NE-k8Q" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="30" id="dvU-4C-K36"/>
+                <constraint firstItem="8hX-3b-W2e" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="e3x-I7-TbN"/>
+                <constraint firstItem="1G1-NE-k8Q" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="hce-cl-L7z"/>
+                <constraint firstItem="RlV-2q-b4f" firstAttribute="width" secondItem="ayo-LX-27f" secondAttribute="width" id="iG5-s3-fMr"/>
+                <constraint firstItem="tBv-gD-ds5" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="j7K-QJ-lVX"/>
+                <constraint firstItem="RlV-2q-b4f" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="pUa-k4-4im"/>
+                <constraint firstAttribute="bottom" secondItem="tBv-gD-ds5" secondAttribute="bottom" id="tsN-eY-5kE"/>
+            </constraints>
+            <point key="canvasLocation" x="34.5" y="54.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg_zbfx" width="16" height="16"/>
+        <image name="launch_close" width="64" height="64"/>
+        <image name="launch_map_on" width="26" height="26"/>
+        <image name="room_button" width="250" height="44"/>
+    </resources>
+</document>
